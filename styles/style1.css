@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primeira: #0C0C0D;
+    --cor-segunda: #F2F0F0;
+    --cor-terceira: #A6122D;
+    --cor-quarta: #18314F;
+
+    --fonte-primeira: "Bungee", sans-serif;
+    --fonte-segunda: "Inter Tight", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primeira);
+    color: var(--cor-segunda);
+}
+.cabecalho__menu__link {
+    font-family: var(--fonte-segunda);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--cor-terceira);
+    text-decoration: none;
+}
+.cabecalho {
+    padding: 2% 0% 0% 10%;
+}
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link:hover {
+    color: var(--cor-quarta);
+}
+h1 {
+    color: var(--cor-segunda);
+}
+.apresentacao__links__link {
+    background-color: var(--cor-primeira);
+    color: var(--cor-segunda);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family: var(--fonte-primeira);
+    border: 4px solid var(--cor-terceira);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+a {
+    text-decoration: none;
+    color: var(--cor-segunda);
+}
+footer {
+    color: var(--cor-segunda);
+    font-family: var(--fonte-segunda);
+    font-size: 1.125rem;
+}
+span {
+    color: var(--cor-terceira);
+}
+.titulo-destaque {
+    color: var(--cor-terceira);
+}
+.titulo-destaque:hover {
+    color: var(--cor-quarta);
+}
+.texto-destaque {
+    color: var(--cor-segunda);
+    font-size: 1.125rem;
+    display: flex;
+}
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 10%;
+} 
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.apresentacao__conteudo__titulo {
+    font-size: 1.875rem;
+    font-family: var(--fonte-primeira);
+    font-weight: 400;
+}
+.apresentacao__conteudo__texto {
+    font-size: 1.25rem;
+    font-family: var(--fonte-segunda);
+    font-weight: 600;
+}
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-segunda);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.foto__capa {
+    border: 10px inset var(--cor-terceira);
+    border-radius: 15px;
+}
+.foto__sinopse {
+    border: 10px inset var(--cor-terceira);
+    border-radius: 15px;
+}
+.foto__capa:hover {
+    border: 15px solid var(--cor-quarta);
+    transition: 100ms linear;
+}
+.apresentacao__links__link:hover {
+    background-color: var(--cor-terceira);
+}
+.rodape {
+    color: var(--cor-segunda);
+    background-color: var(--cor-terceira);
+    font-family: var(--fonte-segunda);
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 24px;
+    font-weight: 600;
+}
+.foto__galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 100px;
+}
+.foto__borda{
+    border: 8px inset var(--cor-terceira);
+    border-radius: 8px;
+}
+.foto__borda:hover {
+    border: 15px solid var(--cor-quarta);
+    transition: 300ms linear;
+}
+.foto__sinopse:hover {
+    border: 15px solid var(--cor-quarta);
+    transition: 100ms linear;
+}
+.apresentacao__conteudo__titulo__sinopse {
+    font-size: 1.875rem;
+    font-family: var(--fonte-primeira);
+    font-weight: 400;
+    display: flex;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .texto-destaque {
+        justify-content: center;
+    }
+
+    .apresentacao__conteudo__titulo__sinopse {
+        justify-content: center;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
